@@ -9,11 +9,20 @@ public class Ex_2 {
         Scanner login = new Scanner(System.in);
 
         String user;
-        String password = "PontesSETE";
+        String password;
 
         System.out.println("Digite o login: ");
         user = login.next();
+        System.out.println("Digite a senha: ");
+        password = login.next();
 
+        while ( user == password) {
+            System.out.print("ERRO!, usuário e senha não podem ser iguais, digite uma nova senha: ");
+            System.out.println("Digite a senha: ");
+            password = login.next();
+        }
+
+        System.out.println("Cadastro aprovado!");
 
     }
 }
