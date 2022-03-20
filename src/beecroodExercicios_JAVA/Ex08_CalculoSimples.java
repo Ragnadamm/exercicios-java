@@ -8,8 +8,10 @@ public class Ex08_CalculoSimples {
         Scanner calc = new Scanner(System.in);
         DecimalFormat valor = new DecimalFormat("0.00");
 
+        /*Digita os valores na mesma linha normalmente, que os inputs são
+        lidos na mesma linha, desde que separe eles com espaço (5 1 4,30).*/
 
-        int codigoPeca_1= calc.nextInt();
+        int codigoPeca_1 = calc.nextInt();
         int qtdPecas_1 = calc.nextInt();
         double valorUniPeca_1 = calc.nextDouble();
         int codigoPeca_2 = calc.nextInt();
