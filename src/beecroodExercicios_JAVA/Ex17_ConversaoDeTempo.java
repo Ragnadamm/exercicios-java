@@ -19,6 +19,38 @@ public class Ex17_ConversaoDeTempo {
 
         System.out.printf("%d:%d:%d\n", horas, minutos, segundos);
 
-
     }
+
+
+
+/*
+"%, d" significa que você está imprimindo 1 espaço, em seguida, um inteiro com vírgula(s) ([ 1,000,000,000])
+
+            "%,d" significa que você está imprimindo um inteiro com vírgula(s) ([1,000,000,000])
+
+            "%d" significa que você está imprimindo um inteiro sem vírgula(s) ([1000000000])
+
+
+
+    Quando você corre seguindo linha
+
+// extra space in front with number formatted
+System.out.println(String.format("%, d",1000000000));
+
+// number formatted with ,
+System.out.println(String.format("%,d",1000000000));
+
+// just number
+System.out.println(String.format("%d",1000000000));
+
+    OUTPUT:
+
+            1,000,000,000
+
+            1,000,000,000
+            
+            1000000000
+            */
+
+
 }
