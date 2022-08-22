@@ -1,5 +1,6 @@
 package beecroodExercicios_JAVA;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 //Mesmo o código rodando, resposta não foi aceita no BEECROWD
@@ -7,6 +8,7 @@ import java.util.Scanner;
 public class Ex0024_Media_3__A {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        DecimalFormat dc = new DecimalFormat("0.0");
 
         double n1, n2, n3, n4, media, notaExame, mediaFinal;
 
@@ -17,7 +19,7 @@ public class Ex0024_Media_3__A {
 
         media = ((n1 * 2) + (n2 * 3) + (n3 * 4) + (n4 * 1)) / (2 + 3 + 4 + 1);
 
-        System.out.println("Média: " + media);
+        System.out.println("Média: " + dc.format(media));
 
         if (media >= 7) {
             System.out.println("Aluno aprovado.");
@@ -26,7 +28,7 @@ public class Ex0024_Media_3__A {
         } else if ((media < 7) && (media >= 5)) {
             System.out.println("Aluno em exame.");
             notaExame = scan.nextDouble();
-            System.out.println("Nota do exame: " + notaExame);
+            System.out.println("Nota do exame: " + dc.format(notaExame));
 
             mediaFinal = (media + notaExame) / 2;
 
@@ -36,7 +38,7 @@ public class Ex0024_Media_3__A {
                 System.out.println("Aluno reprovado.");
             }
 
-            System.out.println("Média final: " + mediaFinal);
+            System.out.println("Média final: " + dc.format(mediaFinal));
         }
 
     }
